@@ -1,0 +1,98 @@
+<div class="section" id="contact">
+        <div class="cc-contact-information" style="background-image: url('assets/images/contact.jpg');">
+          <div class="container">
+            <div class="cc-contact">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="card mb-0" data-aos="zoom-in">
+                    <div class="h4 text-center title">Me contacter</div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card-body">
+
+
+                          <form (ngSubmit)="onSubmit()">
+                            <div class="p pb-3">
+                              <strong>N'hesitez pas à me contacter </strong>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group">
+                                  <span class="input-group-addon">
+                                    <i class="fa fa-user-circle"></i>
+                                  </span>
+                                  <input class="form-control" type="text" name="name" placeholder="Name" type="text" name="name" [(ngModel)]="name" required>
+                                </div>
+                              </div>
+                            </div>
+    
+
+
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group">
+                                  <span class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                  </span>
+                                  <input class="form-control" type="text" name="email" placeholder="E-mail" type="email" name="email" [(ngModel)]="email" required>
+                                </div>
+                              </div>
+                            </div>
+                            
+
+
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group">
+                                  <span class="input-group-addon">
+                                    <i class="fa fa-file-text"></i>
+                                  </span>
+                                  <input class="form-control" type="text" name="subject" placeholder="Subject" type="text" name="subject" [(ngModel)]="subject" required>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="form-group">
+                                  <textarea class="form-control" name="message" placeholder="Your Message" name="message" [(ngModel)]="message" required></textarea>
+                                </div>
+                              </div>
+                            </div>
+ 
+
+
+                            <div class="row">
+                              <div class="col">
+                                <button class="btn btn-primary" type="submit">Envoyer</button>
+                              </div>
+                            </div>
+                         
+                          </form>
+
+
+
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <p class="mb-0">
+                            <strong>Phone</strong>
+                          </p>
+                          <p class="pb-2">+33 612739246</p>
+                          <p class="mb-0">
+                            <strong>Email</strong>
+                          </p>
+                          <p>rosemekou.nadia@gmail.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ng-snotify class="material"></ng-snotify>
